@@ -1,23 +1,28 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
-class Binary_Search
+class Java
 {
-    public static void main(String[] args)
-
+    public static void main (String[] args)
     {
-
         Scanner sc=new Scanner(System.in);
-        int arr[]={374,65,1,6576,76,56,4,6,7,44,7678,97809};
-        int j;
-        Arrays.sort(arr);
-        System.out.println("search number");
-                int k=sc.nextInt();
+        System.out.println("enetr size");
+        int n= sc.nextInt();
+        int arr[]=new int[n];
 
-           j=  Arrays.binarySearch(arr,k);
+        int max= Integer.MAX_VALUE;
+/* i ki value  7 tak chalegi arr[i] kitni bhi dalo+*/
+        for(int i=0;i<n;i++)
+        {
+            System.out.println("enetr number"+(i+1));
+            arr[i]
+                    = sc.nextInt();
+            if(arr[i]<max)
+            {
+                max=arr[i];
+            }
+        }
+        System.out.print("largest number"+max);
 
 
-
-        System.out.println("ascending:  "+j);
     }
 }
